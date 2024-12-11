@@ -1,0 +1,100 @@
+%%%%%%% ﷽‎%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,skipsamekey,12pt,british]{curve}
+\usepackage{settings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Border Layout
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{scrlayer-scrpage}
+\usepackage{lipsum}
+\pagestyle{scrheadings}
+\newcommand{\jamanta}{\tikz[remember picture,overlay] 
+    \draw [black,line width=3mm]
+    (current page.south west)
+    rectangle
+    (current page.north east)
+    ;}
+\chead[\jamanta]{\jamanta} % for page borders
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
+  \usepackage{fontspec}
+  \setmainfont[Ligatures=TeX,SmallCapsFeatures={Letters=SmallCaps,LetterSpace=5}]{Charis SIL}
+  \setsansfont[Ligatures=TeX]{Lato}
+  \setmonofont{Inconsolata}
+\else % If you're using pdfLaTeX or latex
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[tracking=smallcaps]{microtype}
+  \usepackage{fbb}
+  \usepackage[type1]{cabin}
+  \usepackage[varqu,varl]{zi4}
+  \useosf  %% Comment out if you prefer lining figures rather than old style figures
+\fi
+\usepackage{csquotes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only needed if you want a Publication List
+\addbibresource{own-bib.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change the page margins if you want
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change the colours if you want
+% \definecolor{SwishLineColour}{HTML}{00FFFF}
+% \definecolor{MarkerColour}{HTML}{0000CC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change the item prefix marker if you want
+%\prefixmarker{$\diamond$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Photo is only shown if "fullonly" is included
+\includecomment{fullonly}
+%\excludecomment{fullonly}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hspace{75mm}{\Large\bfseries\sffamily \Large C\normalsize{URRICULUM} \Large V\normalsize{ITAE}}
+\vspace*{3mm} \newline
+\centerline{\bfseries\sffamily \huge \hspace{60mm} T\Large{AHIR} \huge S\Large{HAIKH } \faChevronCircleRight{ } \Large  E\normalsize{mbedded} \Large S\normalsize{oftware} \Large E\normalsize{ngineer}}
+\newline
+\leftheader{%
+  \vspace*{5mm}
+  \newline \makefield{\faHome}{\texttt{\href{https://en.wikipedia.org/wiki/India}{Nationality\hspace{10.5mm}: Indian}}} 
+  \newline \makefield{\faCcVisa}{\texttt{\href{https://www.bamf.de/DE/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html}{Residence Permit\hspace{0mm}: EU Blue Card holder (Germany)}}}
+  \newline \makefield{\faCalendar}{D.O.B\hspace{23.4mm}: \hspace{1.5mm}11.11.1990}
+  \newline \makefield{\faWhatsapp}{\texttt{Mobile\hspace{21.2mm}: +91-8401852801/+49-1775119495(WhatsApp)}}
+  \newline \makefield{\faEnvelope}{\texttt{\href{mailto:tahir11shaikh@gmail.com}{Email\hspace{23.33mm}: tahir11shaikh@gmail.com}}}
+  \newline \makefield{\faLinkedinSquare}{\texttt{\href{https://www.linkedin.com/in/tahir-shaikh-70083845/}{LinkedIn\hspace{17.03mm}: www.linkedin.com/in/tahir-shaikh-70083845/}}}
+  \newline \makefield{\faStreetView}{\texttt{\href{https://goo.gl/maps/u2suMcBBNVUnXSZp7}{Address\hspace{19.19mm}: 291, Camp Sadar Bazar, Shahibaug, Ahmedabad}}}\\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rightheader{~}
+\begin{fullonly}
+\photo[l]{TahirNew}
+\photoscale{0.18}
+\end{fullonly}
+
+\title{Curriculum Vitae}
+
+\begin{document}
+\makeheaders[c]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makerubrichead{\makefield{\faInfoCircle} {Introduction}}
+I have total 10+ years of experience in Embedded Software Engineering dealing with Integrated Development Environment with various type of Microcontroller/PowerPC, Stand alone Controller, Linux based Open CPU SDK and varies sensors/inter-hardware using C/C++ programming, product development with Agile Software development life cycle, UDS(ISO14229-1) stack implementation \& integration, Unit-testing, System-testing, Field-testing, Software Support and Root Cause Analysis, UML based State-Charts, Enhancement and Maintenance of codes.\\
+Also, I had been involved few months of my initial career as Hardware Engineering and hands of experienced in Schematic Designs, Layout Designs QC, Components(SMD/Through hole) Assembly process, Hardware set-up and Testing and Troubleshooting.
+\vspace*{10mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makerubric{employment}
+\makerubric{education}
+\newpage
+\makerubric{skills}
+\makerubric{misc}
+\newpage
+\input{publications}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makerubric{referee}
+%\input{referee-full}
+\makerubric{declaration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

@@ -1,0 +1,101 @@
+%\makerubrichead{\faProductHunt\ Industrial Projects}
+\makerubrichead{\makefield{\faGears} {Industrial Projects}}
+
+%\subrubric{Industrial Projects}\newline
+\hfill
+\newline
+\hspace{-10mm} \textbf{\large {\faProductHunt}roduct Name: Electric Vehicle(2W) Software Architect Design \& Development}.\par
+\hspace{10mm} \textbf{Organization:} \href{https://samarthemobility.com/}{Samarth E-Mobility, Ahmadabad, Gujarat, India}\par
+\begin{itemize}
+    
+    \item{\textbf{Sub {\faProductHunt}roduct Name: {Vehicle Software Development}}}\par
+    \textbf{Platform:} ARM32/64 with RTOS, Android OS and AUTOSAR\par
+    \textbf{Communication Protocols:} CAN, I2C, SPI, ADC, USB, UART, etc\par
+    \textbf{SW Tools:} Android Studio, TI CCS, ST CubeIDE, Espressif, Vector CAN Db++, PCAN/Bus-Master\par
+    \textbf{Coding:} Embedded C/CPP(Data Structures), Kotlin, Python\par
+    \textbf{Description:} Development of software in a layered architecture (BSW + ASW) for various Electronic Control Units (ECUs) such as Motor Controllers, Body Control Units (BCU), Vehicle Instrument Clusters, and Battery Management Systems (BMS). \\-Design and implement a comprehensive vehicle communication system among ECUs, integrating them over the CAN (Controller Area Network) protocol for robust and efficient data exchange.\\-Develop a cloud back-end architecture to enable seamless vehicle-to-cloud connectivity and integration with end-user application, with real-time data exchange and remote vehicle management. \\-Design custom bootloaders for each ECU to support firmware updates, with efficient memory management and minimizing downtime with fail safe mechanism. \\-Implement BLUFI protocol to use BLE GATT services to control basic functionality of vehicle and Wi-Fi for FOTA update.\\-Develop UNIT-TEST software for the prototype ECUs to ensure reliability and performance under various conditions, leveraging automated testing frameworks and continuous integration tools.\\-Develops custom library components for voltage sensor, Current sensor, Temperature Sensor(NTC), MEMS sensor, I2C based IO Expander, SPI based High side switches with diagnostic, etc. \\-Design software with os level concept and DMA controller for efficient and robust design\par
+\par
+
+\vspace{2mm}
+\hspace{-10mm}\textbf{\large {\faProductHunt}roduct Name: Electric Vehicle(2W) Software Integration Development}.\par \textbf{Organization:} \href{https://matter.in/}{Matter Motor Works, Ahmadabad, Gujarat, India}\par
+
+    \item{\textbf{Sub {\faProductHunt}roduct Name: {Unified Diagnostic Services Client(UDS) Implementation}}}\par
+    \textbf{Platform:} AArch64/ARM64(ARMv8-Cortex A-53 Series)\par
+    \textbf{Communication Protocols:} ISO CAN TP\par
+    \textbf{SW Tools:} Embedded C, Java Native Interface(JNI), Android-Kotlin\par
+    \textbf{Description:} Developed UDS clinet software to communication with ECU with varies services of UDS like Firmware upgrade, read/write DID, DTCs monitoring, etc. Also work on security Algorithm for Security Access.\par
+    \textbf{Role:} Write client software for Android platform.\par
+    
+    \item{\textbf{Sub {\faProductHunt}roduct Name: {CAN integration for Android based system}}}\par
+    \textbf{Platform:} AArch64/ARM64(ARMv8-CortexAX Series)\par
+    \textbf{Communication Protocols:} CAN, SPI, SocketCAN\par
+    \textbf{SW Tools:} Android Studio, Candump, CAN-DBC Parser/Decoder\par
+    \textbf{Coding:} Embedded C, Java Native Interface(JNI), Android-Kotlin \par
+    \textbf{Description:} To interface MCP2515, stand alone CAN controller to ARM64 based Android system. It will collect all CAN data(RAW Messages) from MCP2515(CAN-SPI) at physical layer using linux SocketCAN protocol by JNI interface of Android, I.E to receive CAN data in 'C' based native application then it will send to that RAW data to android application layer.
+    Also, implemented CAN-DBC parser and decoder logic in Kotlin-Android to evaluate actual CAN signals like Vehicle Speed, Gear, Battery info, etc. then this CAN signals are used to display on Vehicle Information Unit. \par
+    \textbf{Role:} In-Charge of all CAN related stuff like CAN bus analysis, CAN Error test, CAN unit-test.\par
+    
+    \item{\textbf{Sub {\faProductHunt}roduct Name: {Motor-Drive Train Unit}}}\par
+    \textbf{Platform:} 32-Bit MCU(TI TMS320F280049C) with Embedded C with unity test framework.\par
+    \textbf{Communication Protocols:} CAN, UART, ADC, I2C,GPIO etc\par
+    \textbf{SW Tools:} CCS, ISP2550, PCAN/Bus Master\par
+    \textbf{Description:} It is used to test all peripherals and hardware like Clutch, break,start inputs, current/voltage/temperature sensors, angle sensors, throttle, CAN tx-rx, Etc. Also, it is used to test the all functions used inside FOC using CLA by applying mock arguments using unity .\par
+    \textbf{Role:} Write unit test case for it.\par
+    
+    \item{\textbf{Sub {\faProductHunt}roduct Name: {eSIM based CAN to Cloud System}}}\par
+    \textbf{Platform:} 32-Bit MCU(STM32) and Quectel SDK(ARMv7a-vfp-neon-oe-linux-gnueabi).\par
+    \textbf{Communication Protocols:} CAN, UART, ADB, etc\par
+    \textbf{SW Tools:} STM32CubeIDE, Open CPU SDK, PCAN/Bus Master, QFlash\par
+    \textbf{Coding:} Embedded C and Shell/Bash Script and Native process\par
+    \textbf{Description:} It will collect all vehicle/Cell information from  CAN transceiver, then it processed and send it to cloud using Quectel EC-25E LTE modem(attached eSIM) with native application like uplink(Rust based MQTT based application).\par
+    \textbf{Idea:} Idea of this product is collecting all vehicle data from cloud and Further this data can be used to monitor vehicle/cell status by python based Analysis tool.\par
+    \textbf{Role:} In-Charge of all software related things like Software development with CAN bus analysis, CAN Error test, CAN unit-test by PCAN, Etc\par
+\par
+
+\vspace{2mm}
+\hspace{-10mm} \textbf{\large {\faProductHunt}roject Name: Textile Spinning Preparatory}.\par
+    \textbf{Organization:} \href{https://www.truetzschler.de/en/locations/production-worldwide/india/company-profile/}{Trützschler GmbH \& Co. KG}\par  \textbf{Platform:} C Programming, Multi-Threading, Data Structure.\par
+    \textbf{Communication Protocols:} Serial, CAN, GPIO, TKN, MTP Etc\par
+    \textbf{SW Tools:} Eclipse, TST, XiBase9(HMI Graphics), MiKTeX.\par
+    \textbf{Coding:} Embedded C and \LaTeX(documentation) \par
+    \textbf{Description:} All type of Blow room/Blend line machines like Bale Opener, Tuft Opener, Cleaners, Mixer, Metal Detector/Separator, Filter, Waste Collector, etc and Retrofit solutions\par
+    \textbf{Role:} To implement these machines into Module based concept. \\To enhance Trützschler Communication Network (TKN) between machine and Line Commander. \\To develops technical functionality/features of machines for standard as well as service mode. \\To test and analysis functionality/features of machines in Machine Simulator.
+
+\vspace{2mm}
+\hspace{-10mm} \textbf{\large {\faProductHunt}roject Name: \href{https://www.smartdcc.co.uk/smart-future/dual-band-communications-hubs/}{Dual Band Communication Hub(DBCH)}}.\par
+    \textbf{Organization:} \href{http://www.slscorp.com/index.php}{System Level Solutions Pvt Ltd, Anand, Gujarat, India}\par
+    \textbf{Platform:} 32-Bit MCU (Telit xE910, EFR32) Programming in C.\par
+    \textbf{Communication Protocols:} USB, SPI, UART, Watchdog, SFR Etc\par
+    \textbf{SW Tools:} Eclipse DS-5, Silab Simplicity Studio.\par
+    \textbf{Coding:} Embedded C and Python 2.7\par
+    \textbf{Description:} It is part of Smart Metering Implementation Program which held by British Government body and Department of Climate Change (DCC). A smart metering installation usually includes Gas and Electricity smart meters, an In-Home Display (IHD) and a CommsHub (Communication Hub). These devices will communicate with each other via a Zigbee based Home Area Network (HAN) which is generated by the communication Hub, but it covers only 70\% of premises. So, for remaining 30\% we need a solution that an additional variant of CommsHub will be required, which uses a HAN frequency of 868MHz along with the existing 2.4GHz frequency called Dual Band Communication Hub (DBCH).\par
+    \textbf{Role:} To implement services of 868 radio which provide alternate Zigbee HAN Network, Implementation of Server-Client application for WAN(LTE) Network over 4G radio.
+
+\vspace{2mm}
+\hspace{-10mm} \textbf{\large {\faProductHunt}roject Name: Wi-Fi Based Alarm Alert System}.\par
+    \textbf{Organization:} \href{http://www.thegt.com/}{The Global Tech(I) Pvt. Ltd., Ahmadabad, Gujarat, India}\par
+    \textbf{Platform:} 32-Bit MCU(TI MSP430) Programming in C.\par
+    \textbf{Communication Protocols:} UART, USB(VCP), SPI, I2C, TCP/IP, Etc\par
+    \textbf{SW Tools:} STM32 CubeMX and Keil MDK515\par
+    \textbf{Coding:} Embedded C, MySQL\par
+    \textbf{Description:} It is Wi-Fi based Alarm Alert System which is customizing solution for Injection moulding Machine where it plays different Sound Sequence (0-15) as per different Input Sequence (0-15) and Priority Level. It is connected with Socket Server and we can show up to last 10 Days Data from RDBMS. We can control and monitoring current Sound and Input Sequence from \faWindows\ Windows (PC), \faAndroid\ Android (Mobile) and \faApple\ I-phone (Mobile) application.\par
+    \textbf{Role:} Interfacing of Wi-fi Module (ESP8266) with MCU and handling of TCP/IP Server-Client Application.
+
+\vspace{2mm}
+\hspace{-10mm} \textbf{\large {\faProductHunt}roduct Name: Web Based Smart Management System}.\par
+    \textbf{Organization:} \href{http://www.thegt.com/}{The Global Tech(I) Pvt. Ltd., Ahmadabad, Gujarat, India}\par
+    \textbf{Platform:} 32-Bit MCU(PIC32MX) Programming in C.\par
+    \textbf{Communication Protocols:} UART, SPI, I2C, ADC, TCP/IP, Boot loader, etc\par
+    \textbf{SW Tools:} MPLAB 8.89V\par
+    \textbf{Coding:} Embedded C\par
+\begin{itemize}
+    \item{\textbf{Sub {\faProductHunt}roduct Name: \href{http://www.thegt.com/celltower.aspx}{Cell Tower Management System (CTMS)}}}\par
+    \textbf{Description:} It is online data acquisition system which use to control and monitoring Energy parameters like Voltage, Current, Power Factor of RYB Phase of Energy Meter, Fuel Status, Main Status, Temperature Sensor with Date and Time on Socket Server or authenticated web application.\par
+    It also provides smart alert for Low Fuel status, Main Failure/Cut-off status, DG Low Battery status, on request KWH status, AC and DG on/off status, etc\par
+    \textbf{Role:} Handling of Energy Meter’s Parameter and GPRS Service of SIMCOM.\par
+    
+    \item{\textbf{Sub {\faProductHunt}roduct Name: \href{http://www.thegt.com/automationsystem.aspx}{Smart Home System}}}\par
+    \textbf{Description:} To control and monitoring Home Appliances like Light, Bulb, Fan, Motor, etc from web-based application. To get and display status of AC parameter like Voltage, Current, Power Factor, etc on application. It is a device with complete energy intelligence platform.\par
+    \textbf{Role:} Interfacing 5460A power IC with MCU, Handling of GPRS Service of SIMCOM.\par
+\end{itemize}
+\vspace{10mm}
